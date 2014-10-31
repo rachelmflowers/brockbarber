@@ -1,0 +1,43 @@
+
+			<h4>For more information please fill out the form below:</h4>
+			<form method="post" action="http://www.brockbarber.com/formmail.php" name="Contact Form" enctype="multipart/form-data">
+			<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER"/>
+			<!-- STEP 2: Put your email address in the 'recipients' value.
+                         Note that you also have to allow this email address in the
+                         $TARGET_EMAIL setting within formmail.php!
+            -->
+			<input type="hidden" name="recipients" value="barberbrock77/*/gmail.com, rachelmflowers/*/gmail.com"/>
+			<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name,Phone:Your phone number,"/>
+			<input type="hidden" name="subject" value="NEW Contact Form!"/>
+			<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName"/>
+			<!--<input type="hidden" name="good_url" value="http://www.brockbarber.com/templates/good_sub.html"/>
+			<input type="hidden" name="bad_url" value="http://www.brockbarber.com/fmbadhandler.php"/>
+			<input type="hidden" name="bad_template" value="http://www.brockbarber.com/Templates/bad_sub.html"/>-->
+			<input type="hidden" name="mail_options" value="NoEmpty"/>
+			<input type="hidden" name="this_form" value="http://www.brockbarber.com/contact.html"/>
+				<div>
+					<div class="row">
+						<p>Please enter your name: <input type="text" name="FullName"/>
+					</div>
+					<div class="row">						
+						<p>Please enter your email address: <input type="text" name="EmailAddr"/></p>
+					</div>
+					<div class="row">
+						<p>May we contact you? &nbsp; Yes <input type="radio" name="can contact" value="Yes" checked="checked"/> &nbsp; No <input type="radio" name="can contact" value="No"/></p>
+					</div>
+					<div class="row">
+						<p>How would you like us to contact you? &nbsp; Email <input name="How to contact" type="checkbox" value="Email"/> &nbsp; Phone <input name="How to contact" type="checkbox" value="Phone"/></p>
+					</div>
+					<div class="row">
+						<p>Please enter your phone number:<br/><small>(if you would like us to contact you in this manner)</small> <input type="text" name="Phone"/></p>
+					</div>
+				</div>
+				<div class="floatright">
+					<div class="row"><p>Please enter your message:</p></div>
+					<div class="row"><textarea name="mesg" rows="10" cols="50"></textarea></div>
+					<br />
+					<div class="row"><input type="submit" value="Submit"/></div>
+					<br />
+					<div class="row"><h4>Thank you!</h4></div>
+				</div>
+			</form>

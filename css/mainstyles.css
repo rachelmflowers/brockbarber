@@ -1,0 +1,323 @@
+/* ---- MAIN CSS STYLES ---- */
+
+html, body, #ContentBox { height: 100%; }
+
+* { margin:0; padding:0; } 
+
+body > #ContentBox {height: auto; min-height: 100%;}
+
+body {
+	background: url('../images/whitemarbBG.jpg') repeat-x 300px 0 #fff;
+	margin: 0 auto;
+	text-align : center;
+	color: #8c715a;
+	font: 100% 'DroidSerifRegular', Arial, sans-serif;
+}
+
+#ContentBox {
+	width: 900px;
+	margin: 0 auto;
+}
+.clearfloat {clear: both;}
+
+a.button {
+    /* Sliding right image */
+    background: transparent url('../images/button_right.png') no-repeat scroll top right; 
+	display: block;
+	float: left;
+	height: 35px; 
+	margin-right: 6px;
+	padding-right: 10px;
+	/* FONT PROPERTIES */
+	text-decoration: none;
+	color: #f8f1d3;
+	font-size:18px;
+}
+a.button span {
+	/* Background left image */ 
+	background: transparent url('../images/button_left.png') no-repeat; 
+	display: block;
+	line-height: 23px;
+	padding: 5px 0 7px 11px;
+}
+
+a.button:hover {
+    /* Sliding right image */
+    background: transparent url('../images/button_hover_right.png') no-repeat scroll top right; 
+	display: block;
+	float: left;
+	height: 35px; 
+	margin-right: 6px;
+	padding-right: 10px;
+	/* FONT PROPERTIES */
+	text-decoration: none;
+	color: #f8f1d3;
+	font-size:18px;
+}
+a.button:hover span {
+	/* Background left image */ 
+	background: transparent url('../images/button_hover_left.png') no-repeat; 
+	display: block;
+	line-height: 23px;
+	padding: 5px 0 7px 11px;
+}
+
+a.button span em {font-family: 'DroidSerifItalic';}
+
+/* ---- TEXT ATTRIBUTES ---- */
+@font-face {
+    font-family: 'DroidSerifRegular';
+    src: url('../fonts/DroidSerif-Regular-webfont.eot');
+    src: url('../fonts/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSerif-Regular-webfont.woff') format('woff'),
+         url('../fonts/DroidSerif-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSerif-Regular-webfont.svg#DroidSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSerifItalic';
+    src: url('../fonts/DroidSerif-Italic-webfont.eot');
+    src: url('../fonts/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSerif-Italic-webfont.woff') format('woff'),
+         url('../fonts/DroidSerif-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSerif-Italic-webfont.svg#DroidSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSerifBold';
+    src: url('../fonts/DroidSerif-Bold-webfont.eot');
+    src: url('../fonts/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSerif-Bold-webfont.woff') format('woff'),
+         url('../fonts/DroidSerif-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSerif-Bold-webfont.svg#DroidSerifBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSerifBoldItalic';
+    src: url('../fonts/DroidSerif-BoldItalic-webfont.eot');
+    src: url('../fonts/DroidSerif-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSerif-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/DroidSerif-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSerif-BoldItalic-webfont.svg#DroidSerifBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HarabaraHandItalic';
+    src: url('../fonts/HarabaraHand-webfont.eot');
+    src: url('../fonts/HarabaraHand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HarabaraHand-webfont.woff') format('woff'),
+         url('../fonts/HarabaraHand-webfont.ttf') format('truetype'),
+         url('../fonts/HarabaraHand-webfont.svg#HarabaraHandItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+p {font: 13px/15px 'DroidSerifRegular', Times, serif; padding: 10px 0;}
+
+h1 {font: 36px/32px 'HarabaraHandItalic';color: #602410; border-bottom: 2px solid #602410; margin: 20px 0 0 0;}
+
+h2 {font: 36px/32px 'HarabaraHandItalic';color: #301808; border-bottom: 2px solid #301808; margin: 20px 0 0 0; text-align:right;}
+
+h3 {font: 28px 'HarabaraHandItalic'; color: #f8f1d3;  }
+
+h4 {font: 15px/17px 'DroidSerifBoldItalic', Times, serif; padding: 5px 0; color:#602410; }
+
+h5 {font: 21px 'DroidSerifBoldItalic'; padding: 8px 10px; background-color: #f8f1d3; color: #301808; margin: 15px 0;}
+
+a {text-decoration: none; color: inherit;}
+
+a:hover {}
+
+ul li {font: 13px/15px 'DroidSerifRegular', Times, serif;}
+
+em { font-style: normal;}
+
+td {padding: 5px 0px;}
+
+.shadow {text-shadow: 2px 2px 3px rgba(68, 68, 68, 0.9);}
+	
+.small, small {font-size: 11px;}
+
+.left {float: left;}
+
+.right {float:right;}
+
+/* ---- HEADER ---- */
+
+#header {
+	text-align: left; 
+	background: url('../images/headerbg.png') repeat-x, url('../images/schluter.jpg') repeat; 
+	height: 100px; 
+	border-bottom: 6px solid #000;
+}
+
+body.home #header {
+	height:400px;
+}
+
+#navheader {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#navheader img.logo {
+	text-align: left;
+}
+
+#navheader ul li {
+	display: inline; 
+	padding: 7px; 
+	font-size: 15px;
+} 
+
+#navheader ul {
+	margin: -65px 0 0 0;
+	text-align: right;	
+}
+#navheader ul li a {color: #f8f1d3;}
+#navheader ul li a:hover {color: #7a7950;}
+
+
+/* ---- MAIN CONTENT ---- */
+
+#mainContent {
+	text-align: left; 
+	margin: 5px 0 35px 0;
+	padding-bottom: 200px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+#mainContent #leftcontent {
+	width: 500px;
+	float: left;
+	padding: 15px;
+}
+
+#mainContent #rightcontent {
+	width: 250px;
+	float: right;
+	padding: 15px;
+}
+#mainContent ul {color: #602410;}
+
+#imageheader {background: url(../images/orman/slideshowbg.png) no-repeat; width: 667px; height: 284px; margin: 50px auto 0 auto;}
+
+/* ---- HOME PAGE ---- */
+body.home #mainContent #leftcontent { margin-bottom: 100px;}
+body.home #mainContent #rightcontent img {text-align:center; margin: 10px 59px;}
+body.home #mainContent .clearfloat #brands img { height: 45px; width: auto; margin:10px; float: none; position: inherit; top:auto; right: auto;}
+body.home #mainContent .clearfloat {margin-left: 15px;}
+body.home #mainContent .clearfloat p { width: 350px; margin-top: 5px;}
+body.home #mainContent .clearfloat img {height: 90px; width: auto; float: right; position: relative; top: -90px; right: 270px; margin-bottom: -90px;}
+
+/* ---- ABOUT PAGE ---- */
+
+body.about #mainContent ul {
+	list-style: inside;
+}
+body.about #mainContent ul li { margin: 3px 10px;}
+body.about #mainContent sup {font-size: x-small; position: relative; top: -4px; left: 1px;}
+
+/* ---- SERVICES PAGE ---- */
+
+body.services #mainContent #Accordion1 .columns {
+	-moz-column-count:4; /* Firefox */
+	-webkit-column-count:4; /* Safari and Chrome */
+	column-count: 4;
+	-moz-column-gap:25px; /* Firefox */
+	-webkit-column-gap:25px; /* Safari and Chrome */
+	column-gap: 25px;
+}
+
+body.services #mainContent #Accordion1 .column {
+	height: 245px;
+	width: 200px;
+}
+
+/* ---- GALLERY PAGE ---- */
+
+body.gallery #ContentBox #mainContent div.gallerybg {
+	background-color: #e3e3e3;
+	margin: 15px;
+	padding: 10px;
+	border: 1px solid #9f9f9f;
+	border-radius: 13px;
+	color: #f8f1d3;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+body.gallery #ContentBox #mainContent ul {text-align: center;}
+
+body.gallery #ContentBox #mainContent ul li {
+	display: inline;
+	font-size: 19px;
+	color: #301808;
+	padding: 0 10px;
+}
+
+body.gallery #ContentBox #mainContent div.gallerybg h5 { 
+	color: #fd981d;
+	background: none;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	border-bottom: 2px groove;
+}
+
+/* ---- CONTACT PAGE ---- */
+
+body.contact #ContentBox #mainContent div {width: 400px; float:left;}
+
+body.contact #ContentBox #mainContent div.floatright {width: 400px; float:right; margin-bottom: 25px;}
+body.contact #ContentBox #mainContent div.floatright input[type="submit"] {margin: 10px 0;}
+
+
+/* ---- FOOTER ---- */
+
+#footer {
+	background-color: #784828; 
+	border-top: 3px solid rgba(0,0,0, 0.2);
+	position: relative;
+	margin-top: -200px; /* negative value of footer height */
+	height: 200px;
+	clear:both;
+}
+
+#footerContent {width:900px; margin: 0 auto; padding: 15px 0;}
+
+#footer #leftcontent {width:400px; float: left; text-align: left;}
+
+#footer #rightcontent {width: 400px; float: right; text-align: right;}
+
+#footer #footerContent #leftcontent p.small {color: #301808; margin-top: 25px;}
+
+#footer #footerContent #leftcontent em.phone {font: 28px 'DroidSerifItalic';}
+
+#footer #footerContent #rightcontent p.small {font-family: 'DroidSerifItalic'; color: #f8f1d3; padding-top: 100px;}
+
+#footer #footerContent #rightcontent ul li {display: inline; padding-left: 20px; font-size: 15px;}
+
+#footer #footerContent #rightcontent ul li a {color: #301808;}
+
+#footer #footerContent #rightcontent ul li a:hover {color: #f8f1d3;}
+
+
+
